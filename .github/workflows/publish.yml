@@ -19,10 +19,9 @@ jobs:
         run: docker build -t gustavr12/deliver-map-api:${{ github.sha }} .  # Corregido
 
       - name: Tag Latest
-        run: docker tag gustavr12/deliver-map-api:${{ github.sha }} gustavr12/deliver_map_api:latest
+        run: docker tag gustavr12/deliver-map-api:${{ github.sha }} gustavr12/deliver-map-api:latest
 
       - name: Push Docker Image
         run: |
           docker push gustavr12/deliver-map-api:latest
           docker push gustavr12/deliver-map-api:${{ github.sha }}
-
