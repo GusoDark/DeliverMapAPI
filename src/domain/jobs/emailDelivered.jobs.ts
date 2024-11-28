@@ -8,7 +8,7 @@ export const emailDeliveredJob = () => {
 
     cron.schedule("*/10 * * * * *", async ()=>{
         try {
-            const pedidos = await OrderModel.find({ deliveryStatus: true });
+            const pedidos = await OrderModel.find({ deliveryStatus: true, isSentDeliveryMail: false });
             
             if (!pedidos.length){
                 console.log("No hay pedidos por entregar");

@@ -22,7 +22,7 @@ export const emailOrderRegisteredJob = () => {
                 const htmlBody = generateOrderEmailTemplate(pedido.lat, pedido.lng)
                 await emailService.sendEmail({
                     to: pedido.customerMail,
-                    subject: "Nuevo caso de Viruela del Mono",
+                    subject: `Nuevo pedido registrado a nombre de ${pedido.customerName}`,
                     htmlBody: htmlBody
                 });
                 console.log(`Email enviado para el pedido con ID: ${pedido._id}`)

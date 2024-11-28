@@ -2,6 +2,7 @@ version: '3.8'
 
 services:
   deliver-map-api:
+    # Documentar esta linea para realizacion de pruebas locales de la api, de lo contrario dejar como está
     image: gustavr12/deliver-map-api:latest
     build: .
     container_name: deliver-map-api
