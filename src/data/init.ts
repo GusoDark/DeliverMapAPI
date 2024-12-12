@@ -4,7 +4,7 @@ interface ConnectionOptions{
   mongoUrl: string;
   dbName: string;
 }
-
+//init.ts
 export class MongoDatabase{
   static async connect(options:ConnectionOptions){
     try{

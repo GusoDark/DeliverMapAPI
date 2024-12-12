@@ -10,10 +10,12 @@ const orderSchema = new mongoose.Schema({
   },
   isSentMailOrder: {
     type: Boolean,
+    //required: false
     default: false
   },
   isSentDeliveryMail: {
     type: Boolean,
+    //required: false
     default: false
   },
   deliveryStatus: {
@@ -40,3 +42,4 @@ const orderSchema = new mongoose.Schema({
 
 export const OrderModel = mongoose.model("Order", orderSchema);
 
+//verificacion del modelo 1
