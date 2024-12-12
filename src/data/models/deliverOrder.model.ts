@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+//order schema
 const orderSchema = new mongoose.Schema({
   lat: {
     type: Number,
