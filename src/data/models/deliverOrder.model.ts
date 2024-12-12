@@ -10,12 +10,10 @@ const orderSchema = new mongoose.Schema({
   },
   isSentMailOrder: {
     type: Boolean,
-    //required: false
     default: false
   },
   isSentDeliveryMail: {
     type: Boolean,
-    //required: false
     default: false
   },
   deliveryStatus: {
