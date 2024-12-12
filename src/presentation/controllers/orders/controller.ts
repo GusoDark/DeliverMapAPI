@@ -2,6 +2,7 @@ import { Request, Response } from "express";
 import { OrderModel } from "../../../data/models/deliverOrder.model";
 import { EmailService } from "../../../domain/services/email.service";
 
+//Order controller
 export class OrderController{
   public getOrders = async ( req: Request, res: Response) => {
     try{
