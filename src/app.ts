@@ -6,6 +6,7 @@ import { envs } from "./config/envs.plugin";
 import { emailOrderRegisteredJob } from "./domain/jobs/emailRegister.jobs";
 import { emailDeliveredJob } from "./domain/jobs/emailDelivered.jobs";
 
+//app
 const app = express();
 app.use(express.json());
 app.use(AppRoutes.routes);
