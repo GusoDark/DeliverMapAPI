@@ -6,7 +6,13 @@ import { envs } from "./config/envs.plugin";
 import { emailOrderRegisteredJob } from "./domain/jobs/emailRegister.jobs";
 import { emailDeliveredJob } from "./domain/jobs/emailDelivered.jobs";
 
+import cors from "cors";
+
+
+
 const app = express();
+//Coonfiguracion de cors
+app.use(cors());
 app.use(express.json());
 app.use(AppRoutes.routes);
 
