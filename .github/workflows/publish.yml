@@ -25,3 +25,5 @@ jobs:
         run: |
           docker push gustavr12/deliver-map-api:latest
           docker push gustavr12/deliver-map-api:${{ github.sha }}
+
+        

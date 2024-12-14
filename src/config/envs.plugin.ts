@@ -10,3 +10,4 @@ export const envs = {
   MAIL_SECRET_KEY: env.get("MAIL_SECRET_KEY").asString(),
   MAPBOX_ACCESS_TOKEN: env.get("MAPBOX_ACCESS_TOKEN").asString()
 }
+
